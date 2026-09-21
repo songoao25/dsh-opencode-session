@@ -1,0 +1,16 @@
+name: Bug report
+description: Report a reproducible plugin issue.
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Remove API keys, tokens, and private URLs.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction
+      placeholder: DSH version, plugin version, provider route, and steps
+    validations:
+      required: true
