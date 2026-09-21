@@ -16,7 +16,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "test": "node tests/test.mjs",
+    "test": "node tests/test.mjs && node tests/test-package-contract.mjs",
     "prepublishOnly": "npm test"
   },
   "keywords": [
@@ -39,11 +39,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nobu121/dsh-opencode-session.git"
+    "url": "https://github.com/songoao25/dsh-opencode-session.git"
   },
-  "homepage": "https://github.com/nobu121/dsh-opencode-session",
+  "homepage": "https://github.com/songoao25/dsh-opencode-session",
   "bugs": {
-    "url": "https://github.com/nobu121/dsh-opencode-session/issues"
+    "url": "https://github.com/songoao25/dsh-opencode-session/issues"
   },
   "dsh": {
     "bundle": {

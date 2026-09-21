@@ -5,6 +5,10 @@ plugin that automatically sends the **`x-opencode-session`** request header on
 model calls routed to **OpenCode / OpenCode Go** providers — one stable
 session id per DSH conversation.
 
+This repository is a maintained public fork of
+[nobu121/dsh-opencode-session](https://github.com/nobu121/dsh-opencode-session).
+It preserves the upstream MIT license, author attribution, and Git history.
+
 ## Why
 
 Since 2026-09-05 OpenCode's relay requires an `x-opencode-session` header on
@@ -50,6 +54,11 @@ If you run DSH from a source checkout instead, load it as an overlay:
 `pnpm dsh web --patch ./cordis.patch.yml`.
 
 ## Configuration
+
+There is deliberately no global DSH Settings page. Enable or disable the
+plugin from **Plugins → Installed → opencode-session**. The repair is
+transparent at its defaults; its advanced host-side options stay in the
+profile patch below so no unrelated global settings surface is added.
 
 The plugin row lives in the bundle's `cordis.patch.yml`; all keys are optional:
 
